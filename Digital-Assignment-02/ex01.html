@@ -8,6 +8,72 @@
 <body>
     <script>
         alert('Hello World!');
+        
+        var number = prompt("Enter a number", 0);
+        alert(number);
+
+        var num1 = prompt('Enter first number: ', 0);
+        var num2 = prompt('Enter second number: ', 0);
+        alert(`Product: ${parseInt(num1) * parseInt(num2)}`);
+
+        var num1 = prompt('Enter first number: ', 0);
+        var num2 = prompt('Enter second number: ', 0);
+        alert(`Sum: ${parseInt(num1) + parseInt(num2)}`);
+
+        var num1 = prompt('Enter first number: ', 0);
+        var num2 = prompt('Enter second number: ', 0);
+        alert(`Larger: ${parseInt(num1) > parseInt(num2) ? num1 : num2}`);
+
+        var num1 = prompt('Enter first number: ', 0);
+        var num2 = prompt('Enter second number: ', 0);
+        alert(`Ascending order: ${parseInt(num1) < parseInt(num2) ? num1 + ', ' + num2 : num2 + ', ' + num1}`);
+
+        exp = '';
+        for (var i = 1; i <= 5; i++) {
+            exp += i.toString() + ' ';
+        }
+        alert(exp);
+
+        exp = '';
+        for (var i = 1; i < 20; i++) {
+            if (i % 3 == 0) {
+                exp += i.toString() + ' ';
+            }
+        }
+        alert(exp);
+
+        exp = '';
+        for (var i = 9; i > 0; i--) {
+            exp += i.toString() + ' ';    
+        }
+        alert(exp);
+
+        flag = false;
+        while (flag == false) {
+            var num = prompt('Enter a number (between 0 and 100): ', 0);
+            if (num >= 0 && num <= 100) {
+                alert(num);
+                flag = true;
+                break;
+            } else {
+                alert('ERROR: Invalid input!');
+            }
+        }
+
+        sum = 0;
+        num = prompt('Enter a number: ', 10);
+        for (var i = 0; i <= num; i++) {
+            sum += i;
+        }
+        alert('Sum: ' + sum);
+
+        sum = 0;
+        num = prompt('Enter a number: ', 10);
+        for (var i = 0; i <= num; i++) {
+            sum += i;
+        }
+        alert('Avg: ' + (sum) / (parseInt(num) + 1));
+
     </script>
 </body>
 </html>
